@@ -1,0 +1,19 @@
+function c = RiIG_correct_coef(alpha,beta,N_mean)
+% alpha = 8;
+% beta = 1;
+% N_mean = 30;
+gamma = sqrt(alpha.^2-beta.^2);
+lambda = (N_mean.*gamma).^2;
+pd = makedist('InverseGaussian','mu',N_mean,'lambda',lambda);
+N_mean1 = random(pd,1,10000);
+N_mean2 = random(pd,1,10000);
+N_mean_mean = mean([N_mean1 N_mean2]);
+N_mean_min = min([N_mean1;N_mean2]);
+N_mean_min_mean = mean(N_mean_min);
+N1 = poissrnd(N_mean1,1,10000);
+N2 = poissrnd(N_mean1,1,10000);
+N_mean0 = mean([N1 N2]);
+Nmin = min([N1;N2]);
+Nmin_mean = mean(Nmin);
+c = Nmin_mean*N_mean_min_mean/N_mean0/N_mean_mean;
+% fprintf('To correct : y = y/a and the corrected coefficient a = 1/c  is %.4f \n',1/c);

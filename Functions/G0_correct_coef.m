@@ -1,0 +1,19 @@
+function c = G0_correct_coef(alpha,N_mean)
+% alpha = 2; % alpha>1
+% N_mean = 100;
+aa = alpha;
+bb = 1./N_mean./(alpha-1);
+lam1 = gamrnd(aa,bb,1,10000);
+lam2 = gamrnd(aa,bb,1,10000);
+N_mean1 = 1./lam1;
+N_mean2 = 1./lam2;
+N_mean_mean = mean([N_mean1 N_mean2]);
+N_mean_min = min([N_mean1;N_mean2]);
+N_mean_min_mean = mean(N_mean_min);
+N1 = poissrnd(N_mean1,1,10000);
+N2 = poissrnd(N_mean1,1,10000);
+N_mean0 = mean([N1 N2]);
+Nmin = min([N1;N2]);
+Nmin_mean = mean(Nmin);
+c = Nmin_mean*N_mean_min_mean/N_mean0/N_mean_mean;
+% fprintf('To correct : y = y/a and the corrected coefficient a = 1/c  is %.4f \n',1/c);
