@@ -3,7 +3,7 @@ Code for reproducing most of the results in the paper[A Generalized Gaussian Coh
 
 # Authors
 
--[Dongxiao Yue](https://github.com/dxyue)
+-[Dong-Xiao Yue](https://github.com/dxyue)
 
 -Feng Xu
 
