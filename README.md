@@ -4,16 +4,23 @@ Code for reproducing most of the results in the paper[A Generalized Gaussian Coh
 # Authors
 
 -[Dongxiao Yue](https://github.com/dxyue)
+
 -Feng Xu
+
 -Ya-Qiu Jin
 
 If you find the code is useful, please cite our paper!
 
 @article{GGCS,
+
   title={A Generalized Gaussian Coherent Scatterer Model for Correlated SAR Texture},
+  
   author={Dong-Xiao Yue, Feng Xu, Alejandro C. Frery ,Ya-Qiu Jin.},
+  
   journal={...},
+  
   year={...}
+  
 }
 
 All the .m files could run directly.
