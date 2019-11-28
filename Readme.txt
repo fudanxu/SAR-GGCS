@@ -2,12 +2,12 @@
 #by Dong-Xiao Yue, Feng Xu, Alejandro Frery and Ya-Qiu Jin.
 
 
-If you find the code is useful, please cite our paper!
+If you find the code is useful, reference:
 @article{GGCS,
   title={A Generalized Gaussian Coherent Scatterer Model for Correlated SAR Texture},
   author={Dong-Xiao Yue, Feng Xu, Alejandro C. Frery ,Ya-Qiu Jin.},
-  journal={...},
-  year={...}
+  journal={submitted to IEEE Trans. Geosci. Remote Sensing},
+  year={2019}
 }
 
 All the .m files could run directly.
