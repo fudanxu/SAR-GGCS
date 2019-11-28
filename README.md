@@ -11,12 +11,19 @@ Code for reproducing most of the results in the paper[A Generalized Gaussian Coh
 
 
 If you find the code is useful, reference:
+
 @article{GGCS,
+
   title={A Generalized Gaussian Coherent Scatterer Model for Correlated SAR Texture},
+  
   author={Dong-Xiao Yue, Feng Xu, Alejandro C. Frery ,Ya-Qiu Jin.},
+  
   journal={submitted to IEEE Trans. Geosci. Remote Sensing},
+  
   year={2019}
+  
 }
+
 
 
 All the .m files could run directly.
